@@ -29,8 +29,6 @@ class selenium(
   validate_bool($manage_logrotate)
   validate_bool($manage_installation)
 
-  include wget
-
   if $manage_user {
     user { $user:
       gid        => $group,
@@ -86,13 +84,13 @@ class selenium(
   }
 
   if $manage_installation {
-    wget::fetch { 'selenium-server-standalone':
-      source             => $jar_url,
-      destination        => "${jar_path}/${jar_name}",
-      timeout            => $download_timeout,
-      nocheckcertificate => $nocheckcertificate,
-      execuser           => $user,
-      require            => File[$jar_path],
+    include ::archive
+
+    archive { "${jar_path}/${jar_name}" :
+      source	=> $jar_url,
+      extract => false,
+      creates	=> "${jar_path}/${jar_name}",
+      require	=> File[$jar_path],
     }
   }
 

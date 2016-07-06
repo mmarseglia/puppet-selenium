@@ -1,7 +1,7 @@
 Puppet selenium Module
 ======================
 
-[![Build Status](https://travis-ci.org/jhoblitt/puppet-selenium.png)](https://travis-ci.org/jhoblitt/puppet-selenium)
+[![Build Status](https://travis-ci.org/mmarseglia/puppet-selenium.png)](https://travis-ci.org/mmarseglia/puppet-selenium)
 
 #### Table of Contents
 
@@ -464,7 +464,7 @@ Support
 -------
 
 Please log tickets and issues at
-[github](https://github.com/jhoblitt/puppet-selenium/issues)
+[github](https://github.com/mmarseglia/puppet-selenium/issues)
 
 
 Contributing
@@ -494,5 +494,4 @@ See Also
  * [Designing Puppet – Roles and Profiles.](http://www.craigdunn.org/2012/05/239/)
  * [`puppetlabs-java`](https://github.com/puppetlabs/puppetlabs-java)
  * [`p0deje/display`](https://github.com/p0deje/puppet-display)
- * [`maestrodev/wget`](https://github.com/maestrodev/puppet-wget)
  * [`yo61/logrotate`](https://github.com/yo61/puppet-logrotate)
